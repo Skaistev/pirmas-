@@ -28,6 +28,7 @@ console.log (marks.length);
 console.log (marks[0]);
 console.log (marks[1]);
 
+
 for (let i=marks.length-3;i<marks.length;i++){
     
     console.log(i,'-->',marks [i]);
