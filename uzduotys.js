@@ -283,7 +283,7 @@ suma += inter[op++];
 console.log('suma',suma);
 
 for (let i=0; i<6; i++){
-    let sum = i += i++
+ 
 console.log (sum); }
 
 
