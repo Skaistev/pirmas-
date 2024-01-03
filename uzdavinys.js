@@ -258,17 +258,13 @@ console.log(ciklasFor(-70,30));
 
 //2a
 
-const raides = 'abcdef';
 
-console.log(raides[raides.length-1]
-    +raides[raides.length-2]
-    +raides[raides.length-3]
-    +raides[raides.length-4]
-    +raides[raides.length-5]
-    +raides[raides.length-6]);
-
-    let raides3 = 'abcdef'
-for (let i=raides3.length-6; i<=raides3.length; i++){
-   
- console.log (raides3);
-}
+    function zodisIsGalo (a){
+        zodis = ""
+        for (let i=a.length-1; i>=0; i--){
+            zodis += a[i];
+    
+    
+    }return a+ '--->', zodis
+    }
+    console.log (zodisIsGalo('abcdef'));
