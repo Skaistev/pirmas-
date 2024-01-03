@@ -266,25 +266,68 @@ if (ccc!==ddd){console.log(' !== Pomidoras');}else {console.log ('Bandykite kita
 
 
 
-const inter = [0,1,2,3,4];
+let inter = [0,1,2,3,4];
 
 let suma = 0;
-op = 0
-suma += inter[op++];
 
-suma += inter[op++];
+for (let i=0; i<inter.length; i++){
+    suma += inter[i];
+ }
+console.log (suma); 
 
-suma += inter[op++];
 
-suma += inter[op++];
+let inter2 = [0,0];
 
-suma += inter[op++];
+let suma2 = 0;
 
-console.log('suma',suma);
+for (let i=0; i<inter2.length; i++){
+    suma2 += inter2[i];
+ }
+console.log (suma2); 
 
-for (let i=0; i<6; i++){
- 
-console.log (sum); }
+
+
+
+// let n = 573;
+// let x = 0;
+// while (n<815){n++; x+=n;};
+// console.log(x);
+
+let i = 0;
+let i2 = 0;
+for (let i=574; i<=815; i++){i2+=i};
+console.log(i2);
+
+let i3 = 0;
+let i4 = 0;
+for (let i3=0; i3<=100; i++){i4+=i};
+console.log(i4);
+
+// let g=0;
+// let gh=0;
+// while (g<100){g++; gh+=g};
+// console.log(gh);
+
+
+let i5 = 0;
+let i6 = 0;
+for (let i5 = -50; i<=50; i++){i6+=i};
+
+console.log(i6);
+
+let i7 = 0;
+let i8 = 0;
+for (let i5 = -70; i<=30; i++){i8+=i};
+
+console.log(i8);
+
+let i9 = 0;
+let i10 = 4;
+
+for (let i9=0; i<=4; i++){i10+=i};
+
+console.log(i10);
+
 
 
 
