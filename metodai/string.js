@@ -89,3 +89,22 @@ const dalys2 = 'labas'.split('');
 console.log (dalys2[1]);
 console.log(dalys2.length);
 console.log('labas'.length)
+
+console.log('PoMiDoRas'.toLowerCase());
+console.log('PoMiDoRas'.toUpperCase());
+
+const pomBad = 'PoMiDoRas';
+
+function makeItGood (text){
+    
+    return text[0].toUpperCase()+text.slice(1).toLowerCase
+ };
+
+const pomGood = makeItGood(pomBad);
+
+console.log (pomBad, '--->',pomGood);
+
+
+console.log(`"${'  labas  '.trim()}"`);
+console.log(`"${'  labas  '.trimStart()}"`);
+console.log(`"${'  labas  '.trimEnd()}"`);

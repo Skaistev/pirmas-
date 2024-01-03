@@ -62,6 +62,10 @@
     "metodai:number": "node --watch metodai/number.js",
     "juodrastis": "node --watch juodrastis.js",
     "metodai:string": "node --watch metodai/string.js",
+    "metodai:array": "node --watch metodai/array.js",
+    "funkcija:arrow": "node --watch function/arrow.js",
+    "uzduotys2": "node --watch uzduotys2.js",
+    "uzdavinys": "node --watch uzdavinys.js",
 
   "author": "saulute, https://github.com/Skaistev",
   "license": "ISC"
