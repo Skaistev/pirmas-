@@ -88,6 +88,8 @@ function daugyba (sk1,sk2){
 
 };
 
+const daugyba1 = (sk1,sk2) => sk1*sk2;
+console.log('sandauga ' + daugyba1(2,3));
 
 daugyba(number1,number2);
 console.log(daugyba(number1,number2));
@@ -265,6 +267,11 @@ console.log(ciklasFor(-70,30));
             zodis += a[i];
     
     
-    }return a+ '--->', zodis
+    }return a + ' ---> '+ zodis
     }
     console.log (zodisIsGalo('abcdef'));
+
+
+    // abc = 'abc';
+    // bca = abc.split('').reverse().join('');
+    // console.log (bca)
