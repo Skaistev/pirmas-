@@ -74,7 +74,7 @@ const kisk = 'bepasikiskekopusteliaudamasis'
 console.log (kisk);
 
 const aaaa= 'kakaaaa'.replace('a','-', 4);
-console.log ('--->',aaaa);
+console.log ('aaaa--->',aaaa);
 
 console.log('----');
 
@@ -93,11 +93,13 @@ console.log('labas'.length)
 console.log('PoMiDoRas'.toLowerCase());
 console.log('PoMiDoRas'.toUpperCase());
 
+//PoMiDoRaS --- > Pomidoras
+
 const pomBad = 'PoMiDoRas';
 
 function makeItGood (text){
     
-    return text[0].toUpperCase()+text.slice(1).toLowerCase
+    return text[0].toUpperCase()+text.slice(1).toLowerCase();
  };
 
 const pomGood = makeItGood(pomBad);
@@ -108,3 +110,10 @@ console.log (pomBad, '--->',pomGood);
 console.log(`"${'  labas  '.trim()}"`);
 console.log(`"${'  labas  '.trimStart()}"`);
 console.log(`"${'  labas  '.trimEnd()}"`);
+
+
+// const abba = 'labas';
+// console.log (abba.split(''));
+// console.log ((abba[1])+''+ abba[2])
+
+console.log(pomBad.split()[0])

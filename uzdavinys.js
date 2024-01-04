@@ -88,8 +88,6 @@ function daugyba (sk1,sk2){
 
 };
 
-const daugyba1 = (sk1,sk2) => sk1*sk2;
-console.log('sandauga ' + daugyba1(2,3));
 
 daugyba(number1,number2);
 console.log(daugyba(number1,number2));
@@ -102,6 +100,9 @@ console.log(daugyba(number3,number2));
 daugyba(number1,number3);
 console.log(daugyba(number1,number3));
 
+
+const daugyba1 = (sk1,sk2) => sk1*sk2;
+console.log('sandauga ' + daugyba1(2,3));
 //3
 
 console.log('----');
