@@ -26,30 +26,42 @@ function doubleTrouble(n) {
 
     return n*2;
 }
+
+console.log ('-----');
+
 const doubleMarks = [];
 
 for (let i=0; i < marks.length; i++) {
-    doubleMarks.push(doubleTrouble (marks[i]));
+
+
+
+    ///doubleMarks.push(marks[i]*2);
+
+
+
+
+   doubleMarks.push(doubleTrouble (marks[i]));
 
 
 } 
-console.log(doubleMarks);
+console.log('--->',doubleMarks);
 
 console.log ('----');
 
-const doubleMarksMap = marks.map (doubleTrouble);
-console.log (doubleMarksMap);
+const doubleMarksMap = marks.map (doubleTrouble); ///negalima naudot skliaustu po funkcijos pavadinimo!
 
 const tripleMarks = marks.map (n=>n*3);
 
-//????
+console.log('triplemarks',tripleMarks);
+
+//
 
 const bool = [true, false, true, false];
 const allTrue = bool.map(x => true);
 console.log (allTrue);
 
 const students = ['Jonas', 'maryte','petras', 'Ona'];
-const inicialai = students.map(s => s[0]);
+const inicialai = students.map(s => s[0]+'.');
 console.log (inicialai);
 
 const matrix = [
@@ -61,7 +73,10 @@ const matrix = [
 ]
 const matrixCount = matrix.map(m=> m.length);
 const matrixFirstValue = matrix.map(m=> m[0]);
+console.log(matrixFirstValue);
 console.log (matrixCount);
+
+console.log ('mandarinai');
 
 const mandarinai = [
     [],
@@ -71,6 +86,8 @@ const mandarinai = [
     [false,false,false,false,false],
     [true,true,true, false],
 ];
+
+
 
 function prinokusiuMandarinuKiekis (krepselis){
     let geruKiekis = 0;
@@ -90,10 +107,14 @@ function prinokusiuMandarinuKiekis (krepselis){
 const prinokusiuKiekis = mandarinai.map(prinokusiuMandarinuKiekis)
 console.log(prinokusiuKiekis);
 
+console.log('svoriai');
+
+
 function filterAllowedPeople (weights){
     const weightLimit = 80; 
+    const weightLimit1 = 30;
 
-    if (weights>weightLimit){
+    if (weights>weightLimit||weights<weightLimit1){
 
 
     return false;}
@@ -105,17 +126,18 @@ function filterAllowedPeople (weights){
 
     const weightLimit = 80; 
 
-    const allowedWeights = []
+    const allowedWeights = [];
 
     for (let i=0; i<weights.length; i++){
 
         if(filterAllowedPeople(weights[i])){
 
-            allowedWeights.push(weights[i]);
+        allowedWeights.push(weights[i]);
         }
     }
     console.log (allowedWeights);
 
+console.log ('filter');
 
     const allowedWeightsFilter = weights.filter(filterAllowedPeople);
     console.log(allowedWeightsFilter);
@@ -125,3 +147,17 @@ function filterAllowedPeople (weights){
 
     const allowedWeights2 = weights.filter(w=>w <= 80 && w >=30);
     console.log (allowedWeights2);
+
+
+    const mandarinai2 = [
+        [],
+        [true, false],
+        [true],
+        [true, true,true],
+        [false,false,false,false,false],
+        [true,true,true, false],
+    ];
+    
+    const mandarinaiFilter = mandarinai2.map(krep => krep.filter(mand=>mand === true).length);
+
+    console.log (mandarinaiFilter);

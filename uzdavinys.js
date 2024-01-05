@@ -266,8 +266,6 @@ console.log(ciklasFor(-70,30));
         zodis = ""
         for (let i=a.length-1; i>=0; i--){
             zodis += a[i];
-    
-    
     }return a + ' ---> '+ zodis
     }
     console.log (zodisIsGalo('abcdef'));
@@ -276,3 +274,28 @@ console.log(ciklasFor(-70,30));
     // abc = 'abc';
     // bca = abc.split('').reverse().join('');
     // console.log (bca)
+
+    //3.
+    const skaiciusNuo = 0; 
+    const skaiciusIki = 11; 
+    const dalinasiIs = 3; 
+
+function liekana (a,b,c) {
+    const z =[]
+    for (let i = a; i<=b; i++){
+        if (i%c===0){
+            z.push(i%c);
+        }
+    }
+return 'Skaiciu intervale tarp '+ a + ' ir '+ b + ' besidalijanciu be liekanos is ' + c + ' yra ' + z.length.toFixed()
+};
+    
+    console.log (liekana(0,11,3));
+    console.log (liekana(0,11,5));
+    console.log (liekana(0,11,7));
+    
+
+    ///Skaiciu intervale tarp 0 ir 11, besidalijanciu be liekanos is 3 yra 4;
+    ///Skaiciu intervale tarp 0 ir 11, besidalijanciu be liekanos is 5 yra 3;
+    ///Skaiciu intervale tarp 0 ir 11, besidalijanciu be liekanos is 7 yra 2;
+       
