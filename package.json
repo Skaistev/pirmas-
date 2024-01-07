@@ -65,6 +65,7 @@
     "uzdavinys": "node --watch uzdavinys.js",
     "juodrastis2": "node --watch juodrastis.js",
     "array-hof": "node --watch metodai/array-hof.js",
+    "uzdavinys2": "node --watch uzdavinys2.js",
     
   "author": "saulute, https://github.com/Skaistev",
   "license": "ISC"

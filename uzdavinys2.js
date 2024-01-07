@@ -6,14 +6,8 @@ function didziausiasSkaiciusSarase (skaiciai){
         return "Pateikta netinkamo tipo reikšmė.";
     }if (skaiciai.length===0){
         return "Pateiktas sąrašas negali būti tuščias."
-    // }if (skaiciai[0]= 1){
-    //     let didziausiasSkaicius1 = skaiciai[1];
-    //     for(let i=2; i<=skaiciai.length; i++){
-    //         if(skaiciai[i] > didziausiasSkaicius1){
-              
-    //           didziausiasSkaicius1 = skaiciai[i];
-    //             return didziausiasSkaicius1;}
-    // }
+    } 
+    
         let didziausiasSkaicius = skaiciai[0];
     for(let i=1; i<=skaiciai.length; i++){
       if(skaiciai[i] > didziausiasSkaicius){
@@ -26,7 +20,7 @@ function didziausiasSkaiciusSarase (skaiciai){
 
 
 
-}}}
+}}
 
 console.log(didziausiasSkaiciusSarase([1,-6,-2,-2]));
 console.log(didziausiasSkaiciusSarase([1,2,3]));
@@ -38,15 +32,24 @@ console.log(didziausiasSkaiciusSarase([]));
 
 
 // bandymas. 
-const skaiciukai = [-1,-2,-3];
-let didziausiasSkaicius = skaiciukai[0];
+const skaiciukai = [1,2,3];
+let didziausiasSkaicius2 = skaiciukai[0];
 
 for(let i=1; i<=skaiciukai.length; i++){
-    if(skaiciukai[i] > didziausiasSkaicius){
+    if(skaiciukai[i] > didziausiasSkaicius2){
       
-        didziausiasSkaicius = skaiciukai[i];
+        didziausiasSkaicius2 = skaiciukai[i];
         console.log('--->',skaiciukai[i]);}}
         
-        console.log (didziausiasSkaicius);
+        console.log (didziausiasSkaicius2);
 
 //  galimas variantas ' let didziausiasSkaicius= Math.max(...skaiciai);', tuomet nereik dvieju paskutiniu if salygu!
+
+// if (skaiciai[0]= 1){
+//     let didziausiasSkaicius1 = skaiciai[1];
+//     for(let i=2; i<=skaiciai.length; i++){
+//         if(skaiciai[i] > didziausiasSkaicius1){
+          
+//           didziausiasSkaicius1 = skaiciai[i];
+//             return didziausiasSkaicius1;}
+// }

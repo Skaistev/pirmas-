@@ -287,7 +287,7 @@ function liekana (a,b,c) {
             z.push(i%c);
         }
     }
-return 'Skaiciu intervale tarp '+ a + ' ir '+ b + ' besidalijanciu be liekanos is ' + c + ' yra ' + z.length.toFixed()
+return 'Skaičių intervale tarp '+ a + ' ir '+ b + ' besidalijančių be liekanos iš ' + c + ' yra ' + z.length.toFixed()
 };
     
     console.log (liekana(0,11,3));
