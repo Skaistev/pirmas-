@@ -112,26 +112,37 @@ console.log('----');
 
 
 function skaitmenuKiekisSkaiciuje (duota) {
+    if(typeof duota !== 'number'){
+        return "Pateikta netinkamo tipo reikšmė."
+    }
+    if (!isFinite(duota)){
+        return "Pateiktas skaicius neturi skaitmenu."
+    }
+    const duotaString = ''+ duota;
+    let skaitmenuSkaicius = duotaString.length;
+  
 
-    let kintamasis = duota;
+    if (!Number.isInteger(duota)){
+        skaitmenuSkaicius--;
+    }
+    if (duota < 0){
+        skaitmenuSkaicius--;
+    }
+    return skaitmenuSkaicius;
+    
+
+
+}
+   
 
 
 
-    if (typeof(kintamasis) === 'number'&& Number.isFinite(kintamasis)&&kintamasis>=0){ 
-        const skaitmenysSkaiciuje = kintamasis.toString().length;
-        //console.log ('kiekis skaiciuje ',skaitmenysSkaiciuje);
-        return 'kiekis skaiciuje ', skaitmenysSkaiciuje
-        }else if(typeof(kintamasis) === 'number'&& Number.isFinite(kintamasis)&&kintamasis<0) {
-            const skaitmenysSkaiciuje = (kintamasis*-1).toString().length;
-            //console.log (skaitmenysSkaiciuje);
-        return 'kiekis skaiciuje ', skaitmenysSkaiciuje}
-            else {
-                return 'netinkama reiksme'}
-
-    return ('kiekis skaiciuje '), skaitmenysSkaiciuje
- }
 
 
+   
+///!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// let size = number.length;
+//for (let i=0; i<number.length; i++){ if (number[i]==='.') {size--}}
 
    
 
@@ -144,16 +155,29 @@ console.log(skaitmenuKiekisSkaiciuje(5))
 
 skaitmenuKiekisSkaiciuje(781);
 console.log(skaitmenuKiekisSkaiciuje(781))
-//skaitmenuKiekisSkaiciuje(37060123456);
-//console.log(skaitmenuKiekisSkaiciuje(37060123456));
-//skaitmenuKiekisSkaiciuje(true);
-//console.log(skaitmenuKiekisSkaiciuje(true));
-//skaitmenuKiekisSkaiciuje('asd');
-//console.log(skaitmenuKiekisSkaiciuje('asd'));
-//skaitmenuKiekisSkaiciuje(NaN);
-//console.log(skaitmenuKiekisSkaiciuje(NaN));
+skaitmenuKiekisSkaiciuje(37060123456);
+console.log(skaitmenuKiekisSkaiciuje(37060123456));
+skaitmenuKiekisSkaiciuje(true);
+console.log(skaitmenuKiekisSkaiciuje(true));
+skaitmenuKiekisSkaiciuje('asd');
+console.log(skaitmenuKiekisSkaiciuje('asd'));
+skaitmenuKiekisSkaiciuje(NaN);
+console.log(skaitmenuKiekisSkaiciuje(NaN));
+skaitmenuKiekisSkaiciuje([]);
+console.log(skaitmenuKiekisSkaiciuje([]));
+skaitmenuKiekisSkaiciuje();
+console.log(skaitmenuKiekisSkaiciuje());
+skaitmenuKiekisSkaiciuje(3.14);
+console.log(skaitmenuKiekisSkaiciuje(3.14));
+skaitmenuKiekisSkaiciuje(-314);
+console.log(skaitmenuKiekisSkaiciuje(-314));
+skaitmenuKiekisSkaiciuje(-Infinity);
+console.log(skaitmenuKiekisSkaiciuje(-Infinity));
 
-///Kintamuju palyginimas///
+
+
+
+console.log ('----Kintamuju palyginimas-----');
 
 
 //1 

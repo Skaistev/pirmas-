@@ -89,7 +89,8 @@ console.log(Number.isFinite (5,5));
 console.log(Number.isFinite (NaN));
 //isfinite - padeda atskirti (-) infinity, nan. 
 
-
+const max1 = Math.max();
+console.log(max1);
 
 
 
