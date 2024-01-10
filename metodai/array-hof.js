@@ -18,7 +18,7 @@ console.log(marks)
 // [20,4,16,8,12] * 2
 //[11,3,9,5,7] +1 
 
-function doubleTrouble(n) {
+function doubleTrouble2(n) {
 
     if (n*2>10){
         return 10
@@ -52,7 +52,10 @@ const doubleMarksMap = marks.map (doubleTrouble); ///negalima naudot skliaustu p
 
 const tripleMarks = marks.map (n=>n*3);
 
+
+
 console.log('triplemarks',tripleMarks);
+
 
 //
 
@@ -73,8 +76,8 @@ const matrix = [
 ]
 const matrixCount = matrix.map(m=> m.length);
 const matrixFirstValue = matrix.map(m=> m[0]);
-console.log(matrixFirstValue);
-console.log (matrixCount);
+console.log('(matrixFirstValue',matrixFirstValue);
+console.log ('matrixCount',matrixCount);
 
 console.log ('mandarinai');
 
@@ -161,3 +164,5 @@ console.log ('filter');
     const mandarinaiFilter = mandarinai2.map(krep => krep.filter(mand=>mand === true).length);
 
     console.log (mandarinaiFilter);
+
+    

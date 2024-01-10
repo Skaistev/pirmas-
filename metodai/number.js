@@ -35,7 +35,7 @@ console.log(parseInt('123,155labas'));
 console.log(parseInt('123.155labas'));
 console.log(parseInt('123labas155'));
 console.log(parseInt('labas.155'));
-
+console.log ('parsefloat')
 console.log(parseFloat(5));
 console.log(parseFloat('123'));
 console.log(parseFloat('123.2222'));
