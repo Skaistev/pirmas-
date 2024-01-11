@@ -73,6 +73,8 @@
     "metodai:sort": "node --watch metodai/sort.js",
     "metodai:reduce": "node --watch metodai/reduce.js",
     "students": "node --watch uzduotys/students.js",
+    "ternary": "node --watch palyginimas/ternary.js",
+    "ciklai": "node --watch ciklas/ciklai.js",
 
   "author": "saulute, https://github.com/Skaistev",
   "license": "ISC"

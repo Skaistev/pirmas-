@@ -89,8 +89,33 @@ sort((a,b)=>a-b).at(0)));
 console.log('Skirtumas tarp didziausio ir maziausio pazymio -', skirtTarpDidzIrMaziausio);
 
 ///Koks vardas studento, kuris turi maziausia pazymi?
-const studentoVardas = students;
-console.log(studentoVardas);
+
+//apskaiciuto maziausia pazymi
+
+function studVardas (students){
+
+const pazymys = students.map(student=>student.marks).
+reduce((newArray, oldArray) => newArray.concat(oldArray)).
+sort((a,b)=>a-b).at(0);
+
+console.log(pazymys);
+
+let studVardas = '';
+for (let i=0; i<students.length;i++){
+    if (students[i].marks.map(a=> a===10)){
+        console.log(students[i].marks)
+        studVardas = students[i].name;
+        console.log (studVardas);
+        return students[i].name;
+       
+    }
+}
+
+
+return 'studVardas'
+}
+console.log(studVardas(students));
+
 
 ///Koks vardas studento, kursi turi geriausia pazymi?
 
