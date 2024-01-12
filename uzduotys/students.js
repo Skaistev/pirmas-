@@ -1,7 +1,7 @@
 const students = [
 {
     name:'Jonas',
-    marks: [2],
+    marks: [2,3,5],
 },{
     name: 'Maryte',
     marks: [9,8,7],
@@ -90,43 +90,97 @@ console.log('Skirtumas tarp didziausio ir maziausio pazymio -', skirtTarpDidzIrM
 
 ///Koks vardas studento, kuris turi maziausia pazymi?
 
-//apskaiciuto maziausia pazymi
+function maziausioPazymioSavininkas (students){
 
-function studVardas (students){
-
-const pazymys = students.map(student=>student.marks).
-reduce((newArray, oldArray) => newArray.concat(oldArray)).
-sort((a,b)=>a-b).at(0);
-
-console.log(pazymys);
-
-let studVardas = '';
-for (let i=0; i<students.length;i++){
-    if (students[i].marks.map(a=> a===10)){
-        console.log(students[i].marks)
-        studVardas = students[i].name;
-        console.log (studVardas);
-        return students[i].name;
-       
+    const pazymys = students.map(student=>student.marks).
+    reduce((newArray, oldArray) => newArray.concat(oldArray)).
+    sort((a,b)=>a-b).at(0);
+    
+    let vardas = '';
+    
+    for (let i=0; i<students.length;i++){
+        if (students[i].marks.includes(pazymys)){
+            vardas += students[i].name + ' ';
+        }}
+        return vardas;
     }
-}
+    console.log('Maziausio pazymio savininkas - ', maziausioPazymioSavininkas(students));
 
-
-return 'studVardas'
-}
-console.log(studVardas(students));
 
 
 ///Koks vardas studento, kursi turi geriausia pazymi?
 
+function didziausioPazymioSavininkas (students){
+
+    const pazymys = students.map(student=>student.marks).
+    reduce((newArray, oldArray) => newArray.concat(oldArray)).
+    sort((a,b)=>a-b).at(-1);
+
+    let vardas = '';
+    
+    for (let i=0; i<students.length;i++){
+        if (students[i].marks.includes(pazymys)){
+            vardas += students[i].name + ' ';
+        }}
+        return vardas;
+    }
+    console.log('Didziausio pazymio savininkas - ', didziausioPazymioSavininkas(students));
+
 
 ///Koks vardas studento, kuris turi geriausia pazymiu vidurki?
 
+function geriausioVidurkioSavininkas (students){
+
+    const vid = students
+    .map(student=>student.marks)
+    .map(marks=>marks.reduce((t,mark)=>t+mark,0)/marks.length).sort((a,b)=>a-b).at(-1);
+
+    let vardas = '';
+    
+    for (let i=0; i<students.length;i++){
+        if (students[i].marks.includes(vid)){
+            vardas += students[i].name + ' ';
+        }}
+        return vardas; 
+    }
+    console.log('Geriausio vidurkio savininkas - ', geriausioVidurkioSavininkas(students));
 
 ///Koks yra vardas studento, kuris turi prasciausia pazymiuy vidurki?
+function prasciausioVidurkioSavininkas (students){
+
+    const vid = students
+    .map(student=>student.marks)
+    .map(marks=>marks.reduce((t,mark)=>t+mark,0)/marks.length).sort((a,b)=>a-b).at(0);
+/// jei vidurkis per kableli? 
+
+    let vardas = '';
+    
+    for (let i=0; i<students.length;i++){
+        if (students[i].marks.includes(vid)){
+            vardas += students[i].name + ' ';
+        }}
+        return vardas; 
+    }
+    console.log('Prasciausio vidurkio savininkas - ', prasciausioVidurkioSavininkas(students));
+
+
+
+
 ///Koks yra vardas studento, kuris turi mažiausiai pažymių?
 ///Koks yra vardas studento, kuris turi daugiausiai pažymių?
 ///Grazinti studentu vardu masyva, kuris yra isrinkiuotas pagal ju vidurki (didejimo tvarka).
 ///Grazinti studentu vardu masyva, kuris yra isrinkiuotas pagal ju vidurki (mazejimo tvarka).
 
 
+const vid = students
+    .map(student=>student.marks)
+    .map(marks=>marks.reduce((t,mark)=>t+mark,0)/marks.length).sort((a,b)=>a-b).at(0);
+
+    console.log(vid)
+
+const marks = [10,10000,19,33.33333];
+
+
+marks.sort((a,b)=>a-b);
+
+console.log (marks);

@@ -64,7 +64,7 @@
     "metodai:array": "node --watch metodai/array.js",
     "funkcija:arrow": "node --watch function/arrow.js",
     "uzdavinys": "node --watch uzduotys/uzdavinys.js",
-    "juodrastis2": "node --watch juodrastis.js",
+    "juodrastis": "node --watch juodrastis.js",
     "array-hof": "node --watch metodai/array-hof.js",
     "uzdavinys2": "node --watch uzduotys/uzdavinys2.js",
     "objektas": "node --watch kintamieji/object.js",
