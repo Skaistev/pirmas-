@@ -1,7 +1,7 @@
 const students = [
 {
     name:'Jonas',
-    marks: [2,3,5],
+    marks: [2],
 },{
     name: 'Maryte',
     marks: [9,8,7],
@@ -155,32 +155,71 @@ function prasciausioVidurkioSavininkas (students){
 
     let vardas = '';
     
+    
     for (let i=0; i<students.length;i++){
         if (students[i].marks.includes(vid)){
             vardas += students[i].name + ' ';
         }}
         return vardas; 
     }
+    
     console.log('Prasciausio vidurkio savininkas - ', prasciausioVidurkioSavininkas(students));
 
 
 
 
 ///Koks yra vardas studento, kuris turi mažiausiai pažymių?
+
+function maziausiaiIvertinimu (students){
+
+    const vardasMazPazymiu = students.map(students=>students.marks.length).
+    sort((a,b)=>a-b).at(0);
+
+    let vardas = '';
+    let i=0
+    for (; i<students.length;i++){
+        if (students[i].marks.length===vardasMazPazymiu){
+            vardas = students[i].name;
+        } }
+        return vardas;
+    }
+
+    console.log('Maziausiai pazymiu turi -', maziausiaiIvertinimu(students));
+
+
 ///Koks yra vardas studento, kuris turi daugiausiai pažymių?
+
+function daugiausiaIvertinimu (students){
+
+    const vardasDaugPazymiu = students.map(students=>students.marks.length).
+    sort((a,b)=>a-b).at(-1);
+
+    let vardas = '';
+    let i=0
+    for (; i<students.length;i++){
+        if (students[i].marks.length===vardasDaugPazymiu){
+            vardas = students[i].name;
+        } }
+        return vardas;
+    }
+
+    console.log('Daugiausiai pazymiu turi -',daugiausiaIvertinimu(students));
+
+
 ///Grazinti studentu vardu masyva, kuris yra isrinkiuotas pagal ju vidurki (didejimo tvarka).
+
+function vidurkiuEile (students){
+
+    const vid1 = students
+
+    .map(student=>student.marks)
+    .map(marks=>marks.reduce((t,mark)=>t+mark,0)/marks.length).sort((a,b)=>a-b);
+
+    
+}
+
+
 ///Grazinti studentu vardu masyva, kuris yra isrinkiuotas pagal ju vidurki (mazejimo tvarka).
 
 
-const vid = students
-    .map(student=>student.marks)
-    .map(marks=>marks.reduce((t,mark)=>t+mark,0)/marks.length).sort((a,b)=>a-b).at(0);
-
-    console.log(vid)
-
-const marks = [10,10000,19,33.33333];
-
-
-marks.sort((a,b)=>a-b);
-
-console.log (marks);
+if ()

@@ -3,7 +3,7 @@
 const students = [
     {
         name:'Jonas',
-        marks: [2],
+        marks: [2,5,5,3],
     },{
         name: 'Maryte',
         marks: [9,8,7],
@@ -93,5 +93,38 @@ const vid = students
 .map(marks=>marks.reduce((t,mark)=>t+mark,0)/marks.length).sort((a,b)=>a-b);
 console.log(vid);
 
+// let daugPazymiu = 0;
+// let vardas = '';
+// let i = 0;
+
+// function vardas1 (students){
+
+// for (let i=0; i<students.length;i++){
+//     if (students[i].marks.length>daugPazymiu){
+//         console.log(vardas);
+//         vardas = students[i].name; 
+//     }
+   
+//     } return daugPazymiu;
+// }
+//     console.log (vardas1(students));
+function daugiausiaIvertinimu (a){
+
+    const vardasDaugPazymiu = students.map(students=>students.marks.length).
+    sort((a,b)=>a-b).at(-1);
+
+    let vardas = '';
+    let i=0
+    for (; i<students.length;i++){
+        if (students[i].marks.length===vardasDaugPazymiu){
+            vardas = students[i].name;
+        } }
+        return vardas;
+    }
+
+    console.log(daugiausiaIvertinimu(students));
 
 
+
+
+const stud = students.forEach((a,b,c)=> c[0]
