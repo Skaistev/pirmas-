@@ -208,18 +208,27 @@ function daugiausiaIvertinimu (students){
 
 ///Grazinti studentu vardu masyva, kuris yra isrinkiuotas pagal ju vidurki (didejimo tvarka).
 
-function vidurkiuEile (students){
+function sort(students) {
+    return students.map((el) => { return {
+          name: el.name,
+          marks: el.marks.reduce((acc, cur) => acc + cur) / el.marks.length,
+        };}).sort((a, b) => b.marks - a.marks).map((el) => el.name);
+  }
 
-    const vid1 = students
 
-    .map(student=>student.marks)
-    .map(marks=>marks.reduce((t,mark)=>t+mark,0)/marks.length).sort((a,b)=>a-b);
+  console.log(stud1(students))
 
-    
-}
-
+  function getStudents(arr) {
+      return arr.map((arr) => {return {
+            name: arr.name,
+            average: arr.marks.reduce((suma, narys) => suma + narys) / arr.marks.length,
+          };
+        })
+        .sort((a, b) => b.average - a.average)
+        .map((arr) => arr.name);
+    }
+    console.log (getStudents(students));
 
 ///Grazinti studentu vardu masyva, kuris yra isrinkiuotas pagal ju vidurki (mazejimo tvarka).
 
 
-if ()
