@@ -93,4 +93,10 @@ const max1 = Math.max();
 console.log(max1);
 
 
-
+// sukurti random skaicius
+console.log(Math.floor(Math.random() * 10))
+let u = [];
+for(i=0;i<10;i++) {
+  d = u.push(Math.floor(Math.random()*100)+1);
+}
+console.log(u)
