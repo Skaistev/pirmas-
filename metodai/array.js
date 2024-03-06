@@ -98,3 +98,6 @@ skaic10 = [1,2,3,4,5,6];
 console.log (parseInt(skaic10.join('')));
 fff= 'true';
 console.log(fff.split(''))
+
+const fff = ["123456"];
+console.log(fff[0])

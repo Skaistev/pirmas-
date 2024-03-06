@@ -49,5 +49,11 @@ const color3 = 'my favorite color: ${a8}+ ${a5}.';
 console.log(color2);
 console.log(color3);
 
+function capitalize(text) {
+    const lower = text.toLowerCase();
+    return lower.replace(lower[0], lower[0].toUpperCase());
+}
 
+console.log(capitalize('labas'));
+console.log(capitalize('Labas'));
 

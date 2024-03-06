@@ -70,3 +70,6 @@ const aaaa = "aha1";
 const ahahah = [...aaa,...aaaa]
 const [n,m] = ahahah
 console.log(ahahah);
+
+
+

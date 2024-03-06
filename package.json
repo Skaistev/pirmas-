@@ -76,7 +76,9 @@
     "ternary": "node --watch palyginimas/ternary.js",
     "ciklai": "node --watch ciklas/ciklai.js",
     "des": "node --watch metodai/destructing.js",
-
+    "fixed": "node --watch uzduotys/to-fixed.js",
+    "uzdavinys3": "node --watch uzduotys/uzdavinys3.js",
+   
   "author": "saulute, https://github.com/Skaistev",
   "license": "ISC"
 }}

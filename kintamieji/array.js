@@ -47,3 +47,16 @@ console.log('suma',marksArraySum);
 //const marksArrayLength = marks.length;
 //const marksAverage = marksArraySum / marksArrayLength
 //console.log (marksAverage);
+
+
+const fff = "2*2/2*5-10";
+console.log(eval(fff))
+
+const aaaa = eval("5+5")
+console.log (aaaa)
+
+console.log(toggle("5"))
+
+
+
+
