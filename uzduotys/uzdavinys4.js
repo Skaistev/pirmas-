@@ -9,7 +9,7 @@ const dataKnygos = {
 }
 
 for (const savybe in dataKnygos){
-    console.log(savybe);
+    console.log(dataKnygos[savybe]);
 }
 
 // 2.     Vartotojų Masyvas: Sukurkite masyvą, kuriame būtų kelios objektų reikšmės, kiekviena reikšmė 
@@ -101,6 +101,32 @@ console.log(products("pienas"));
 
 
 // 4.     Objekto Kopijavimas: Parašykite funkciją, kuri naudojant for in ciklą sukurtų objekto kopiją.
+
+const vartotojai5 = [
+    {
+        vardas: "Ima",
+        amzius: 29
+    },
+    { 
+      vardas: "Ana",
+      amzius: 16
+    },
+    {
+      vardas: "Ema",
+      amzius: 18
+    },
+    {
+        vardas: "Ina",
+        amzius: 25
+    }
+]
+
+
+
+
+const newObj = [...vartotojai5]
+
+console.log('--->', newObj);
 
 
 
@@ -238,3 +264,9 @@ const vartotojai4 = [
         amzius: 25
     }
 ]
+for (const x in vartotojai4){
+
+vartotojai4[x].amzius ++
+}
+console.log(vartotojai4);
+
