@@ -78,7 +78,7 @@
     "des": "node --watch metodai/destructing.js",
     "fixed": "node --watch uzduotys/to-fixed.js",
     "uzdavinys3": "node --watch uzduotys/uzdavinys3.js",
-   
+    "uzdavinys4": "node --watch uzduotys/uzdavinys4.js",
   "author": "saulute, https://github.com/Skaistev",
   "license": "ISC"
 }}

@@ -86,7 +86,15 @@ console.log(array([[1,2,3,3],[2,5,3,4],[6,2,"f",5]]));
 console.log(array([[1,2,3,3],[2,5,3,4],[]]));
 console.log(array([[1,2,3,3],[2,5,3,4],[6,2,3,5,9],[2,5,5,10,1],[2,6,6,9]]));
 
-console.log("z".charCodeAt())
+
+
+function calculate(num1, operation, num2) {
+const a = num1,operation,num2
+  return  
+   }
+
+   console.log((calculate(3.2,"+", 8), 11.2, "3.2 + 8 = 11.2"))
+console.log((calculate(3.2,"-", 8), -4.8, "3.2 - 8 = -4.8"))
 
 
 
