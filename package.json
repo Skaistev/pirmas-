@@ -79,6 +79,7 @@
     "fixed": "node --watch uzduotys/to-fixed.js",
     "uzdavinys3": "node --watch uzduotys/uzdavinys3.js",
     "uzdavinys4": "node --watch uzduotys/uzdavinys4.js",
+    "uzdavinys5": "node --watch uzduotys/uzdavinys5.js",
   "author": "saulute, https://github.com/Skaistev",
   "license": "ISC"
 }}
